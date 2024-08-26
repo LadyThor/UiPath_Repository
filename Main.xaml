@@ -129,7 +129,7 @@
                 <OutArgument x:TypeArguments="x:String">[PayDate]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">["the following date: "+currentMailMessage.Headers("Date")]</InArgument>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">["the  date of: "+currentMailMessage.Headers("Date")]</InArgument>
               </Assign.Value>
             </Assign>
             <umab:CreateHtmlContent DisplayName="Create HTML Content" sap:VirtualizedContainerService.HintSize="434,186.66666666666666" HtmlContent="[MessageBody]" sap2010:WorkflowViewState.IdRef="CreateHtmlContent_1">
